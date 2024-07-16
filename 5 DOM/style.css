@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #1E90FF;
+    font-size: 60px;
+    margin: 0px;
+    padding: 5px;
+    /* border: solid black;
+    border-radius: 8px; */
+}
+
+h2 {
+    color: #1E90FF;
+    font-size: 40px;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* -------- Array Boxes -------- */
+
+.arrayBox {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.arrayBox>div {
+    flex: 1;
+    /* Distribute space evenly among child divs */
+    margin: 5px;
+    /* Adjust margin between boxes */
+    background-color: rgba(32, 32, 52, 0.899);
+    /* Optional: Add background color for visibility */
+    color: aliceblue;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+/*
+--- Note 1 ---
+
+.arrayBox div: Targets all <div> elements inside .arrayBox, regardless of how deeply nested they are.
+.arrayBox > div: Targets only <div> elements that are direct children (immediate descendants) of .arrayBox.
+
+--- Note 2 ---
+
+display: flex;: Turns .arrayBox into a flex container.
+width: 100%;: Ensures .arrayBox spans the entire width of its container (the window in this case).
+justify-content: space-around;: Distributes space evenly around the items inside .arrayBox, ensuring equal gaps between them.
+box-sizing: border-box;: Ensures that padding and border are included in the width calculation, so the boxes don't overflow.
+
+*/
+
+
+/* ----------- Form ----------- */
+
+.form-1 {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* -------------- Boxes Box -------------- */
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-box {
+    display: flex;
+}
+
+.box-box div {
+    border: solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+
+/* ------------------ created div ------------------ */
+
+.outer-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E90FF;
+    height: 100px;
+    width: 100px;
+    color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+}

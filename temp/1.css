@@ -105,23 +105,6 @@ table .last {
     background-color: rgb(57, 2, 108);
 }
 
-/* -------- Array Boxes -------- */
-
-.arrayBox {
-    display: flex;
-    margin: 0px;
-    padding: 10px;
-}
-
-.arrayBox div {
-    display: grid;
-    place-items: center;
-    background-color: rgba(32, 32, 52, 0.899);
-    color: aliceblue;
-    padding: 10px 30px;
-    margin-right: 15px;
-}
-
 /* ------------------------ */
 /* -------- Page 2 -------- */
 /* ------------------------ */
