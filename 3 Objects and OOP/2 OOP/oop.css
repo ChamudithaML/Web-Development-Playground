@@ -38,36 +38,6 @@ body {
     margin-left: auto;
 }
 
-/* -------- My Div 1 -------- */
-
-.myDiv {
-    display: flex;
-    /* background-color: blueviolet; */
-    padding: 0px;
-    margin: 0px;
-}
-
-.myDiv p {
-    padding: 10px 15px;
-    color: aliceblue;
-    display: block;
-    background-color: blueviolet;
-    margin-right: 15px;
-}
-
-.myDiv p:hover {
-    background-color: black;
-}
-
-/* -------- My Div 2 */
-
-.myDiv2 p {
-    float: left;
-    display: block;
-    background-color: burlywood;
-    margin-right: 15px;
-    padding: 10px 15px;
-}
 
 /* -------- Table -------- */
 
@@ -76,26 +46,42 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border-style: solid;
     border-color: black;
     padding: 10px 40px;
-    
+
 }
 
-th{
+th {
     background-color: aqua;
 }
 
-table tr:nth-child(2) td:nth-child(2){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Not related */
+/* Selecting columns using nth-child */
+
+table tr:nth-child(2) td:nth-child(2) {
     background-color: coral;
 }
 
-table .last{
+table .last {
     background-color: chartreuse;
 }
 
-/* tr{
-    border-style: solid;
-    border-color: black;
-} */
