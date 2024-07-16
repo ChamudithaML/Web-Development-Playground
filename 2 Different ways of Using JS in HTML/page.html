@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JS</title>
+
+    <!-- basic way of importing js file to html -->
+    <!-- this way is not good because web page renders top to bottom. js file will run first before html file it will cause erros -->
+    <!-- load the script after the body tag to fix the issue -->
+    <script src="script1.js"></script>
+
+    <!-- but putting js load at the end will cause performance issues -->
+    <!-- async and defer keywords can be used accordingly for js execution -->
+    <script src="script2.js" defer></script>
+
+    <!-- loading js as modules -->
+    <script type="module" src="script3.js"></script>
+    <script type="module" src="script4.js"></script>
+
+
+</head>
+<body>
+
+    <main></main>
+
+    <div id="mySelf"></div>
+    
+
+
+    <script>
+
+
+    </script>
+</body>
+</html>
+
