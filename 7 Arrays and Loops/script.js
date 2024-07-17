@@ -1,5 +1,4 @@
-
-// console.log("this is js 4")
+console.log("Script loaded")
 
 let animals = [
     'lion',
@@ -14,9 +13,7 @@ let animals = [
     'kangaroo'
 ];
 
-console.log(animals);
-
-
+// console.log(animals);
 
 /**
  * --------- Basic array methods ---------
@@ -65,9 +62,24 @@ const forEach2 = function () {
     })
 }
 
+// this is to generate random color
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 const forEach3 = () => {
     animals.forEach((item) => {
-        console.log(item.toUpperCase());
+        const animalDiv = document.querySelector(".animals");
+        let p = document.createElement("p");
+        p.innerHTML = item.toLocaleUpperCase();
+        p.style.backgroundColor = getRandomColor();
+        animalDiv.append(p);
+        // console.log(item.toUpperCase());
     })
 }
 
@@ -77,7 +89,7 @@ const forEach4 = () => {
     })
 }
 
-// forEach4()
+forEach3()
 
 // ---------------------------------------------
 // ---------------------------------------------
@@ -241,8 +253,8 @@ const addAnimalsToPage = function () {
 
 const nestedObjects = {
     item01: {
-        name: "piggy",
-        type: "toy",
+        name: "chama",
+        type: "pro",
         weight: 30,
     },
     item02: {
@@ -280,17 +292,17 @@ const objectAccess = () => {
         listItem.innerHTML = `Name: ${nestedObjects[singleObject].name}`;
         ul2.append(listItem);
         // ul2.style.listStyleType="none"
-        ul2.style.cssText="list-style-type: none; padding: 0px;"
+        ul2.style.cssText = "list-style-type: none; padding: 0px;"
     }
 
     const objItems = document.querySelector(".object-items");
 
-    objItems.style.padding="0px"
+    objItems.style.padding = "0px"
     objItems.append(ul2);
-    console.log(ul2.style)
+    // console.log(ul2.style)
 }
 
-// objectAccess();
+objectAccess();
 
 // ---------------------------------------------
 // ---------------------------------------------
@@ -306,6 +318,7 @@ const carBrands = ["Toyota", "Honda", "Ford", "Chevrolet", "Nissan", "BMW", "Mer
 const mapUsage = () => {
     const carDiv = document.querySelector(".car-brands");
     const ul3 = document.createElement("ul");
+    ul3.style.cssText = "list-style-type: none; padding: 0; margin: 0;";
 
     const carBrandsLi = carBrands.map((item) => {
         let listItem = document.createElement("li");
@@ -318,13 +331,17 @@ const mapUsage = () => {
     })
 
     carDiv.append(ul3);
-    
-    console.log(carBrandsLi);
-    
+
+    // console.log(carBrandsLi);
+
 }
 
-// mapUsage();
+mapUsage();
 
 // ---------------------------------------------
 // ---------------------------------------------
 // ---------------------------------------------
+
+/**
+ * --------- Using splice to arrays ---------
+ */
